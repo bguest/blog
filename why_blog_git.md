@@ -16,7 +16,7 @@ So... I wanted a blog where I could:
 3. Could track history using git without it being totally polluted by stylistic changes. This
    eliminates [Jekyll][1] and [Octopress][2].
 3. Didn't look like total sh\*t.
-4. Written in ruby. Happy developers work on push changes.
+4. Written in ruby. Happy developers work to push changes.
 5. Had good support for code formating.
 
 I'm pretty sure I've achieved all these goals with www.blogithub.com. Try it out yourself.
