@@ -131,8 +131,8 @@ to reboot.
 When the raspberry pi boots backup, log in then
 
 ``` bash
-sudo apt-get updtate
-sudp apt-get upgrade
+sudo apt-get update
+sudo apt-get upgrade
 sudo apt-get install avahi-daemon
 ```
 
@@ -181,6 +181,13 @@ cat ~/.ssh/id_rsa.pub | ssh pi@raspberrypi.local 'mkdir .ssh; touch .ssh/authori
 cat ~/.ssh/id_rsa.pub | ssh root@raspberrypi.local 'mkdir .ssh; touch .ssh/authorized_keys; cat >> .ssh/authorized_keys'
 ```
 
+or if you have `ssh-copy-id` installed, you can do
+
+``` bash
+ssh-copy-id pi@raspberrypi.local
+ssh-copy-id root@raspberrypi.local
+```
+
 Follow prompts, the passwords requested are the passwords that you entered above
 
 ### I. Setup WiFi (optional)
@@ -202,6 +209,8 @@ iface wlan0 inet dhcp
         wpa-psk "password"
 ```
 
+if it doesn't loook similar, see this article https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
+
 ### J. Install Software: Ruby, RubyGems, Javascript, Thin, Nginx, PostgreSQL, Redis
 
 Note: You can install ruby using rvm, but I don't recommend it as its kind of overkill
@@ -221,11 +230,11 @@ apt-get install libreadline-gplv2-dev libyaml-dev libssl-dev libffi-dev
 
 ``` bash
 cd ~
-wget ftp://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.1.tar.gz
-gunzip ruby-2.1.1.tar.gz
-tar -xf ruby-2.1.1.tar
-rm ruby-2.1.1.tar
-cd ruby-2.1.1
+wget ftp://ftp.ruby-lang.org/pub/ruby/2.2/ruby-2.2.2.tar.gz
+gunzip ruby-2.2.2.tar.gz
+tar -xf ruby-2.2.2.tar
+rm ruby-2.2.2.tar
+cd ruby-2.2.2
 ./configure --prefix=/usr     # Takes long enough to grab a beer and maybe drink it.
 make                          # Takes a long time (~2 hours), go for a hike.
 make install                  # Drink another beer.
@@ -243,7 +252,7 @@ Delete the source code to save space (optional, but recommended)
 
 ``` bash
 cd ..
-rm -fR ruby-2.1.1
+rm -fR ruby-2.2.2
 ```
 
 Install NodeJS (because we need a Javascript runtime for rails)
