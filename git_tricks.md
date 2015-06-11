@@ -16,12 +16,18 @@ I use [ZSH][1] with [oh my zsh][2], I highly recommend that you do too. Don't fo
 This gives you access to some fabulous [git shortcuts][3], some ones that I use all the time:
 
     gco     # git checkout
+    gcb     # git checkout -b
     gst     # git status
     grhh    # git reset head --hard
-    ggpull  # git pull origin <current branch>
-    gap     # git add --pach
+    ggl     # git pull origin <current branch>
+    ga -p   # git add --pach
     gc!     # git commit -v --amend              # uses this to tack on stuff to last commit
-    ggpush  # git push origin <current branch>
+    ggp     # git push origin <current branch>
+    ggf     # pit push -f origin <current branch>
+
+I've also added the following aliases to my `~/.zprofile`
+
+    alias gap="git add -p"
 
 ### The '-'
 
@@ -34,6 +40,23 @@ but, you can also use it in some creative ways ie:
 
     cd master; git merge - --ff-only
 
+### GITX
+
+It's a totally awsome GUI for Mac that allows you to quickly visualize git...
+
+Download the [correct][4] version. The original is abandonware.
+
+After you've downloaded the correct version, launch the GUI and under the apple menu select `Enable
+Terminal Useage...`, now you can type
+
+    gitx
+
+In your terminal to instantly launch gitx for that repository.
+
+Make sure download the
+correct branch as the original
+
 [1]:http://www.zsh.org/
 [2]:https://github.com/robbyrussell/oh-my-zsh
 [3]:https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/git.plugin.zsh
+[4]:http://rowanj.github.io/gitx/
