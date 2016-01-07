@@ -16,7 +16,7 @@ your exact specifications.
 5. Roll your own platform. Use Rails and bootstrap.
 6. Abandon your first attempt because Rails / Bootstrap are too heavy, and besides everyone has done
 that already
-7. In you next attempt use some obscure JavaScript library with almost no documentation because you want to try it out.
+7. In your next attempt use some obscure JavaScript library with almost no documentation because you want to try it out.
 8. Bang you head against a wall repeatedly.
 9. Abandon the JavaScript library and choose [Sinatra][sinatra] and [Pure.css][pure].
 10. Successfully create your own blogging platform.
