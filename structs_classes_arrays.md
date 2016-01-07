@@ -1,5 +1,6 @@
 Title: On the mutability of Swift structs and classes in arrays  
 Comments: True  
+Date: January 6, 2016  
 
 As you may or may not expect, in swift, adding a struct to an array vs adding a classe to arrays ends
 up being very different.

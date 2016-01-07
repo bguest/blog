@@ -1,6 +1,7 @@
 Title: NSAttributedString+UIImage  
 Subtitle: A story of the missing NSTextAttachment link
 Comments: True  
+Date: January 7, 2016  
 
 Adding images to an attributed string used to be a kind of tedious process that involved first
 creating a `NSTextAttachment` Instead I just added these extensions to `NSAttributedString` and
