@@ -40,6 +40,18 @@ but, you can also use it in some creative ways ie:
 
     cd master; git merge - --ff-only
 
+### Aliases
+
+You can setup alias methods in git by adding the following to your `~/.gitconfig`
+
+    [alias]
+      up = !git fetch && git fetch --prune --tags && git remote prune origin && git checkout master && git pull
+      lg = log --graph --full-history --all --color --pretty --oneline --abbrev-commit --decorate
+
+`git up` fetches, updates tags, prunes remote branches and updates master branch
+
+`git lg` pretty version of log that shows branches
+
 ### GITX
 
 It's a totally awsome GUI for Mac that allows you to quickly visualize git...
@@ -55,6 +67,12 @@ In your terminal to instantly launch gitx for that repository.
 
 Make sure download the
 correct branch as the original
+
+### Other GitFoo
+
+    Remove Merged branches    
+
+    git branch --merged >/tmp/merged-branches && vi /tmp/merged-branches && xargs git branch -D </tmp/merged-branches>
 
 [1]:http://www.zsh.org/
 [2]:https://github.com/robbyrussell/oh-my-zsh
