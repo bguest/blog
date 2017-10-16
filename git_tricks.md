@@ -77,4 +77,4 @@ correct branch as the original
 [1]:http://www.zsh.org/
 [2]:https://github.com/robbyrussell/oh-my-zsh
 [3]:https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/git.plugin.zsh
-[4]:http://rowanj.github.io/gitx/
+[4]:http://gitx.github.io/
