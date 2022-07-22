@@ -21,4 +21,4 @@ I think they are great, here they are:
 ##Possible Additions:
 
 + **One thing at a time.** Trying to do too much at once means nothing ever gets DONE.
-+ **Make a plan.** Indecisiveness helps no one.
++ **Make a plan. Expect it to change** Indecisiveness helps no one, but don't be beholden to it.
